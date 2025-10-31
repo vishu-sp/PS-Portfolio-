@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Festival - Vishmi Samadhi</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="container">
+      <div class="logo">Vishmi<span>Samadhi</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">Introduction</a></li>
+        <li><a href="index.html#lectures">Lectures</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Food Festival</h1>
+      <p class="page-subtitle">Practical event management and teamwork experience</p>
+      <p class="page-date">29 July 2025</p>
+    </div>
+  </section>
+
+  <!-- Page Content -->
+  <section class="page-content container">
+    <div class="content-card">
+      <h2>Food Festival Project</h2>
+      <p>A hands-on experience in event planning, team coordination, and practical business management. As part of the Professional Skills module assignment, our groupparticipated in the Food Festival by managing our themed stall, CafeTransilvania. Our stall embraced a spooky Halloween-inspired themetocreate a fun and unique dining experience. We offered Club Sandwiches(Blobby Clubs), Bread Pizzas (Mommy Melts Pizza), Cake Pops(Zomball Treats), Corn Dogs (Bat-On-Sticks), Hot Dogs (Drac’s DogBites), Chai Tea (Haunted Spice Sip), and Popcorn (Wicked Pop). Our objective was to provide customers with a creative food experiencewhile enhancing our skills in teamwork, communication, timemanagement, and event planning. Customers were highly engagedwiththe theme and enjoyed both the food and decorations. Andalsoparticipating to charity will doing by our batch. Our group membersgained hands-on experience in managing a food stall, handling sales, andensuring customer satisfaction</p>
+
+      <h3>Project Overview</h3>
+      <div class="project-details">
+        <div class="detail-item">
+          <i class="fas fa-calendar"></i>
+          <h4>Duration</h4>
+          <p>2-week planning and execution</p>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-users"></i>
+          <h4>Team Size</h4>
+          <p>10-member collaborative team</p>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-utensils"></i>
+          <h4>Food Items</h4>
+          <p>Multiple food stations and varieties</p>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-chart-line"></i>
+          <h4>Success Metrics</h4>
+          <p>Sales targets and customer satisfaction</p>
+        </div>
+      </div>
+
+      <h3>Key Responsibilities & Learning</h3>
+      <div class="responsibilities-grid">
+        <div class="resp-item">
+          <h4>Planning & Strategy</h4>
+          <ul>
+            <li>Menu selection and pricing</li>
+            <li>Budget management</li>
+            <li>Resource allocation</li>
+          </ul>
+        </div>
+        <div class="resp-item">
+          <h4>Team Coordination</h4>
+          <ul>
+            <li>Role assignment</li>
+            <li>Communication protocols</li>
+            <li>Conflict resolution</li>
+          </ul>
+        </div>
+        <div class="resp-item">
+          <h4>Execution & Adaptation</h4>
+          <ul>
+            <li>Real-time problem solving</li>
+            <li>Customer service</li>
+            <li>Quality control</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Achievements & Outcomes</h3>
+      <ul class="achievement-list">
+        <li>Successfully managed food preparation and sales</li>
+        <li>Achieved sales targets within allocated time</li>
+        <li>Received positive feedback from participants</li>
+        <li>Developed strong teamwork and leadership skills</li>
+        <li>Gained practical business management experience</li>
+      </ul>
+
+      <div class="gallery-section">
+        <h3>Details</h3>
+        <div class="image-grid">
+        <img src="members.jpeg" alt="Food Festival Setup">
+          <img src="ingredients1.jpeg" alt="Team Collaboration">
+          <img src="ingredients2.jpeg" alt="Customer Interaction">
+          <img src="plan.jpeg" alt="Food Festival Setup">
+        </div>
+      </div>
+
+      <!-- Additional Video Section (Optional) -->
+      <div class="video-gallery">
+        <h3>More Event Moments</h3>
+        <div class="video-grid">
+          <div class="video-item">
+            <video controls>
+              <source src="video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p>Promotion Video</p>
+          </div>
+          <div class="video-item">
+            <video controls>
+              <source src="bts.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p>Behind the scenes</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-section">
+        <h3>Event Highlights</h3>
+        <div class="image-grid">
+        <img src="flyer.jpeg" alt="Food Festival Setup">
+          <img src="food.jpeg" alt="Team Collaboration">
+          <img src="customers.jpeg" alt="Customer Interaction">
+          <img src="memo.jpeg" alt="Food Festival Setup">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Vishmi Samadhi | SA Number: SA23347458</p>
+  </footer>
+
+  <!-- Video JavaScript -->
+  <script>
+    // Enhanced video controls
+    document.addEventListener('DOMContentLoaded', function() {
+      const videos = document.querySelectorAll('video');
+      
+      videos.forEach(video => {
+        // Add loading attribute for better performance
+        video.setAttribute('loading', 'lazy');
+        
+        // Add event listeners for better UX
+        video.addEventListener('loadeddata', function() {
+          console.log('Video loaded successfully');
+        });
+        
+        video.addEventListener('error', function() {
+          console.error('Error loading video');
+        });
+        
+        // Add custom controls functionality (optional)
+        video.addEventListener('click', function() {
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
